@@ -1,0 +1,127 @@
+<head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> {% endcomment %}
+</head>
+<body style='background:linear-gradient(
+  to right,
+  #24243e,
+  #302b63,
+  #0f0c29);'>
+<div class="container">
+    <h2 id='heading' style='color:white;'>Personal Complain</h2>
+    <div  style='width:450px; height:550px;' id='maindiv'>
+        
+        <style>
+            #maindiv{
+                margin: auto;
+                width: 60%;
+                border: 3px solid green;
+                padding: 20px;
+                margin-top:50px;
+                background:white;
+                border-radius:15px;
+                font-size:20px;
+                text-align:left;
+
+            }
+
+            #heading{
+                text-align:center;
+                margin-top:50px;
+            }
+            #button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        </style>
+    <form method="POST" enctype="multipart/form-data">
+        <!-- Security token -->
+        {% csrf_token %}
+
+        <!-- Using the form fields individually -->
+        <div class="mb-3">
+            <label for="{{ form.title.id_for_label }}" class="form-label">Title</label>
+            {{ form.title }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.address.id_for_label }}" class="form-label" id='address'>Address</label>
+            {{ form.address }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.name.id_for_label }}" class="form-label">Description</label>
+            {{ form.name }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.contact.id_for_label }}" class="form-label">Contact</label>
+            {{ form.contact }}
+        </div>
+
+        <div class="mb-3">
+            <label for="{{ form.datetime_field.id_for_label }}" class="form-label">Datetime Field</label>
+            {{ form.datetime_field }}
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="background-color:#009;" id = 'button'>Submit</button>
+    </form>
+</div>
+
+</div>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://sanjay-bhandari.com.np/">Sanjay Bhandari</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+
+{% comment %} linear-gradient(
+  to right,
+  #24243e,
+  #302b63,
+  #0f0c29 {% endcomment %}

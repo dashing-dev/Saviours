@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Tilottama Clean Tilottama</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Navigation bar styles */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #99cc00;
+        }
+        
+        /* Main section styles */
+        .main-section {
+            text-align: center;
+            padding: 50px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .cta-section {
+            background-color: #99cc00;
+            padding: 50px 0;
+            color: #fff;
+        }
+        
+        .cta-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        .testimonial-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        
+        .testimonial-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        
+        /* Animation styles */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 1s forwards;
+        }
+        #tree{
+            width:800px;
+            height:800px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <h1 class="animate-fadeIn">Green Tilottama Clean Tilottama</h1>
+        <p class="animate-fadeIn">Welcome to our website dedicated to promoting cleanliness and environmental awareness.</p>
+        <img  id='tree'src="https://th.bing.com/th/id/R.0e675d7b9315881b634ac0ab55e83911?rik=%2f4pAj%2b%2ft%2bw94Lg&riu=http%3a%2f%2fclipartmag.com%2fimages%2fcartoon-tree-clipart-4.png&ehk=CAp2wvJkgsnQs7J5tyTBtRPkb3aSsm1IzI%2f3qvpy1xw%3d&risl=&pid=ImgRaw&r=0" alt="Tree" class="animate-fadeIn">
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section">
+        <h2 class="animate-fadeIn">Join Us in Keeping Tilottama Clean and Green!</h2>
+        <p class="animate-fadeIn">Take part in our initiatives and make a difference.</p>
+        <a href="#" class="button animate-fadeIn">Get Involved</a>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <h2 class="animate-fadeIn">What Our Community Says</h2>
+        <p class="animate-fadeIn">Read testimonials from satisfied members of our community.</p>
+        <div class="testimonial animate-fadeIn">
+            <img src="user1.jpg" alt="User 1" class="testimonial-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dapibus mi, vel commodo lorem lacinia eu.</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="testimonial animate-fadeIn">
+            <img src="user2.jpg" alt="User 2" class="testimonial-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque dapibus mi, vel commodo lorem lacinia eu.</p>
+            <p>- Jane Smith</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Green Tilottama Clean Tilottama. All rights reserved.
+    </footer>
+
+    <!-- Animation script -->
+    <script>
+        // Trigger animations after the page loads
+        window.addEventListener('load', function() {
+            var animatedElements = document.querySelectorAll('.animate-fadeIn');
+            animatedElements.forEach(function(element) {
+                element.style.animationDelay = '0.5s';
+            });
+        });
+    </script>
+</body>
+</html>
